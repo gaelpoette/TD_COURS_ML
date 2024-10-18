@@ -17,6 +17,7 @@ def build_poly(activation, loss,name_init,params_init, seed):
     bias_initializer=init(name_init,1,1,seed,params_init[2:4])))
     
     model.compile(loss=loss)
+    #model.summary()
     return model
 
 def build_FC(nbNeurons, activations, loss, name_init, params, seed, metrics):
